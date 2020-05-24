@@ -16,6 +16,7 @@ def play_again(y,n):
         again = input("Would you like to play again? (y/n)").lower()
         if again == 'y':
             items.remove(player_weapon)
+            items.remove('Fish')
             intro()
             option_1()
         if again == 'n':
